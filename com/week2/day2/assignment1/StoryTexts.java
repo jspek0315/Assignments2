@@ -9,7 +9,7 @@ public enum StoryTexts
     PreStory("You have traveled back in time.\nTherer are many things you could do.\n"),
     
     //Story Selection Enums
-    StoryChoices("A) Story 1\nB) Story 2\nC) Story 3\n"),
+    StoryChoices("A) Story 1 - Night Decisions\nB) Story 2 - School Decisions\nC) Story 3 - Recreational Decisions\n"),
     A("Story 1"),B("Story 2"),C("Story 3"),
     
     //Story 1
