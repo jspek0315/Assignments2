@@ -7,6 +7,11 @@ public class StoryController
     Scanner sc = new Scanner(System.in);
     String userLastChoice;
 
+    public void setSc(Scanner sc)
+    {
+        this.sc = sc;
+    }
+
     public StoryController()
     {
         this.userLastChoice = "";
