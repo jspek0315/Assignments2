@@ -19,8 +19,13 @@ public class StoryController
 
     public void startStory()
     {
+        startStory("\n" + StoryTexts.PreStory.getMsgTxt());
+    }
+    
+    public void startStory(String preStory)
+    {
         //Create Story Object
-        Story myStory = new Story();
+        Story myStory = new Story(preStory);
         
         // Display Introduction and Instruction Message
         generateInstruction();
@@ -71,6 +76,7 @@ public class StoryController
 
     private void playStory(Story myStory)
     {
+        System.out.println(myStory.getPreStory());
         System.out.println(myStory.getIntro());
         System.out.println(myStory.getOptionTxt());
         userLastChoice = getUserChoice();

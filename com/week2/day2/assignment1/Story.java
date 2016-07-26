@@ -7,10 +7,20 @@ public class Story
     private String path1Result;
     private String path2Result;
     private String path3Result;
+    private String preStory;
     
+
+
     public Story()
     {
-        this("","","","","");
+        this("","","","","","");
+    }
+    
+    public Story(String preStory)
+    {
+        this("","","","","","");
+        this.preStory = preStory;
+        
     }
     
     /**
@@ -20,14 +30,26 @@ public class Story
      * @param path2Result
      * @param path3Result
      */
-    public Story(String intro, String instructions, String path1Result, String path2Result, String path3Result)
+    public Story(String intro, String instructions, String path1Result, String path2Result, String path3Result,String preStory)
     {
         this.intro = intro;
         this.optionTxt = instructions;
         this.path1Result = path1Result;
         this.path2Result = path2Result;
         this.path3Result = path3Result;
+        this.preStory = preStory;
     }
+    
+    public String getPreStory()
+    {
+        return preStory;
+    }
+
+    public void setPreStory(String preStory)
+    {
+        this.preStory = preStory;
+    }
+    
     public String getIntro()
     {
         return intro;

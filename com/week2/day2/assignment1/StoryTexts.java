@@ -6,6 +6,7 @@ public enum StoryTexts
     IntroText ("Welcome to Story Program!\n"),
     StorySelection("Please select which story would you like to play.\n"),
     InstructionText("Hit enter after you type your choice.\n"),
+    PreStory("You have traveled back in time.\nTherer are many things you could do.\n"),
     
     //Story Selection Enums
     StoryChoices("A) Story 1\nB) Story 2\nC) Story 3\n"),
